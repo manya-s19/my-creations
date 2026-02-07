@@ -2,7 +2,7 @@ const projectsData = [
   {
     id: 1,
     title: "Interactive Tutoring Platform",
-    description: "A responsive frontend website for my tutoring service, designed to present subject offerings, testimonials, and contact information in a clear and accessible way.",
+    description: "A responsive frontend website for my tutoring service, designed to present subject offerings, testimonials, and contact information in a clear and accessible way.   ",
     link: "https://manya-s19.github.io/b3tutoring/",
     linkText: "View Project",
     technologies: ["React", "Node.js", "TailwindCSS", "Supabase"],
