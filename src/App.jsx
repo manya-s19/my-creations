@@ -6,7 +6,7 @@ import PortfolioPages from './components/PortfolioPages';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-creations">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<PortfolioPages />} />
