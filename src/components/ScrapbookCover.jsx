@@ -20,7 +20,7 @@ const ScrapbookCover = ({ onOpen }) => {
       
       {/* INCREASED SIZE: max-w-xl -> max-w-2xl */}
       <motion.div
-        className="relative w-full max-w-md max-w-2xl"
+        className="relative w-full max-w-md md:max-w-2xl"
         style={{ perspective: 1500 }}
       >
         <motion.div
