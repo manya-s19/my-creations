@@ -4,7 +4,7 @@ const projectsData = [
     title: "Interactive Tutoring Platform",
     description: "A responsive frontend website for my tutoring service, designed to present subject offerings, success stats, testimonials, and contact information in a clear and accessible way.",
     link: "https://manya-s19.github.io/b3tutoring/",
-    linkText: "View Project",
+    linkText: "<strong>View Project</strong>",
     technologies: ["React", "Node.js", "TailwindCSS", "Supabase"],
     keyFeatures: [
       "Responsive and interactive site layout",
@@ -22,7 +22,7 @@ const projectsData = [
     title: "AI Noise Cancellation System",
     description: "Award-winning hackathon project that uses machine learning to intelligently cancel background noise in real-time audio streams. Perfect for remote work and online meetings.",
     link: "https://github.com/LinHong149/noiseCancel",
-    linkText: "View Project",
+    linkText: "<strong>View Project</strong>",
     technologies: ["Python", "MongoDB", "Next.js", "Google Gemini", "React", "TailwindCSS"],
     keyFeatures: [
       "Real-time noise detection and filtering",
@@ -57,7 +57,7 @@ const projectsData = [
     title: "Personal TFSA Digest",
     description: "An automatic email digest that summarizes stock updates for my TFSA holdings and delivers them at scheduled times.",
     link: "https://github.com/manya-s19/tfsa-daily-digest",
-    linkText: "View Project",
+    linkText: "<strong>View Project</strong>",
     technologies: ["Python", "JavaScript", "OpenAI API", "macOS Automator"],
     keyFeatures: [
       "Configurable list of stocks defined in code",
