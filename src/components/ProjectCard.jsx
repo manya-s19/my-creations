@@ -60,7 +60,7 @@ const ProjectCard = ({ project }) => {
                   rel="noopener noreferrer"
                   className="text-[#256685] underline hover:text-[#ED6A5A] transition-colors"
                 >
-                  View project
+                  <strong>View project</strong>
                 </a>
               </>
               )}
