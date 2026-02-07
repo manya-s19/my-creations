@@ -186,7 +186,7 @@ const PortfolioPages = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.27 }}
-                  className="text-4xl md:text-5xl font-bold text-[#031927] mb-6 font-serif tracking-tight"
+                  className="text-3xl md:text-5xl font-bold text-[#031927] mb-6 font-serif tracking-tight"
                >
                   Hey, I'm <span className="text-[#ED6A5A] inline-block transform -rotate-2">Manya!</span>
                </motion.h1>
@@ -195,19 +195,19 @@ const PortfolioPages = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4 }}
-                  className="space-y-5 text-lg md:text-xl text-[#22333B] leading-relaxed"
+                  className="space-y-5 text-base md: text:lg md:text-xl text-[#22333B] leading-relaxed"
                >
-                  <p>
+                  <p className="text-base md:text-lg">
                     I'm a creative developer who builds things that live on the internet. 
                   </p>
-                  <p className="text-base leading-relaxed text-[#22333B]">I'm a computer science student at the <strong>University of Waterloo</strong> passionate about building things at the intersection of software and hardware, from noise-cancelling tech to aerospace data pipelines. My experience spans researching electrochemistry at Stanford, leading robotics teams, and full-stack development, with a focus on AI, data analysis, and making complex systems work.</p>
-            <p className="text-base leading-relaxed text-[#22333B]">I work primarily with <strong>Python (NumPy, Pandas, PyTorch, TensorFlow), Java, C/C++, and JavaScript/React.</strong> I'm learning Linux right now, and I'm currently developing a <strong>GNSS satellite simulation and web applications for Women in Aerospace Canada.</strong> I'm also passionate about tech x education in my volunteer work, and I tutor in my free time.</p>
-            <p className="text-base leading-relaxed text-[#22333B]">I'm always open to collaborating on projects involving robotics, data science, or creative problem-solving!</p>
+                  <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I'm a computer science student at the <strong>University of Waterloo</strong> passionate about building things at the intersection of software and hardware, from noise-cancelling tech to aerospace data pipelines. My experience spans researching electrochemistry at Stanford, leading robotics teams, and full-stack development, with a focus on AI, data analysis, and making complex systems work.</p>
+            <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I work primarily with <strong>Python (NumPy, Pandas, PyTorch, TensorFlow), Java, C/C++, and JavaScript/React.</strong> I'm learning Linux right now, and I'm currently developing a <strong>GNSS satellite simulation and web applications for Women in Aerospace Canada.</strong> I'm also passionate about tech x education in my volunteer work, and I tutor in my free time.</p>
+            <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I'm always open to collaborating on projects involving robotics, data science, or creative problem-solving!</p>
                   <p>
                     From <strong className="text-[#031927]">tutoring and education platforms</strong> to <strong className="text-[#031927]">satellite simulations</strong>, 
                     I enjoy turning complex ideas into playful, interactive experiences.
                   </p>
-                  <p className="text-base italic opacity-80 pt-2 border-t border-[#031927]/10">
+                  <p className="text-xs md:text-base italic opacity-80 pt-2 border-t border-[#031927]/10">
                     This scrapbook is a collection of my journey, experiments, and professional work. It's a little messy and a work in progress, just like me :)
                   </p>
                </motion.div>
@@ -218,7 +218,7 @@ const PortfolioPages = () => {
                   animate={{ y: 0, opacity: 1 }}
                   whileHover={{ x: 10 }}
                   transition={{ delay: 0.53 }}
-                  className="mt-8 flex items-center gap-3 text-[#031927] font-bold text-xl group w-full text-left"
+                  className="mt-6 md:mt-8 flex items-center gap-2 md: gap-3 text-[#031927] font-bold text-lg md:text-xl group w-full text-left"
                >
                   <span className="border-b-2 border-[#ED6A5A]">Check out my scrapbook portfolio</span>
                   <ArrowRight className="group-hover:text-[#ED6A5A] transition-colors" size={24} />

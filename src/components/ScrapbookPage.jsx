@@ -19,7 +19,7 @@ const ScrapbookPage = ({
 
   return (
     <div 
-      className={`relative w-full h-full paper-texture flex flex-col p-6 md:p-8 ${isLeft ? 'page-left' : 'page-right'}`}
+      className={`relative w-full h-full paper-texture flex flex-col p-4 md:p-8 ${isLeft ? 'page-left' : 'page-right'}`}
       style={{
         backgroundColor: bgColor,
         aspectRatio: '1/1.4', 

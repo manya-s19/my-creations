@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
   return (
     // INCREASED SIZE: max-w-md -> max-w-lg to scale with the larger book
     <motion.div
-      className="relative bg-white p-6 shadow-lg paper-texture w-full max-w-lg mx-auto flex flex-col gap-5"
+      className="relative bg-white p-4 md:p-6 shadow-lg paper-texture w-full max-w-sm md:max-w-lg mx-auto flex flex-col gap-5"
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
         <div>
             {/* Title Block */}
             <div className="flex flex-wrap justify-between items-start gap-2 mb-2">
-                <h3 className="handwritten text-3xl md:text-4xl font-bold text-[#031927] leading-none">
+                <h3 className="handwritten text-2xl md:text-4xl font-bold text-[#031927] leading-none">
                 {project.title}
                 </h3>
                 <span className="bg-[#031927] text-[#F4F1BB] text-sm font-bold px-3 py-1 rounded">
