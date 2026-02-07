@@ -58,7 +58,7 @@ const ProjectCard = ({ project }) => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#22333B] underline hover:text-[#ED6A5A] transition-colors"
+                  className="text-[#256685] underline hover:text-[#ED6A5A] transition-colors"
                 >
                   View project
                 </a>
