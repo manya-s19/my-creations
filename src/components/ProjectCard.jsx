@@ -51,6 +51,19 @@ const ProjectCard = ({ project }) => {
             {/* Description */}
             <p className="text-[#22333B] text-base leading-relaxed font-medium mb-4">
             {project.description}
+            {project.link && (
+              <>
+                {' '}
+                <a 
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#22333B] underline hover:text-[#ED6A5A] transition-colors"
+                >
+                  View project
+                </a>
+              </>
+              )}
             </p>
 
             {/* Technologies */}
