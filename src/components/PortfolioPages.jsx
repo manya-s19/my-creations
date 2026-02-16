@@ -231,7 +231,7 @@ const PortfolioPages = () => {
   return (
     <>
       <Helmet>
-        <title>Manya's Portfolio - Creative Developer & Scrapbooker</title>
+        <title>Manya's Portfolio</title>
         <meta 
           name="description" 
           content="Explore Manya's creative portfolio showcasing tutoring platforms, AI projects, satellite simulations, and fun experiments." 
