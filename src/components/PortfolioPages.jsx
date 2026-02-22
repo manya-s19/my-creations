@@ -12,7 +12,6 @@ import WashiTape from './decorative/WashiTape';
 const PortfolioPages = () => {
   const [viewState, setViewState] = useState('cover'); // 'cover' or 'book'
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
 
   // Keyboard navigation
   useEffect(() => {
@@ -37,14 +36,12 @@ const PortfolioPages = () => {
 
   const handleNext = () => {
     if (currentProjectIndex < projectsData.length - 1) {
-      setDirection(1);
       setCurrentProjectIndex(prev => prev + 1);
     }
   };
 
   const handlePrevious = () => {
     if (currentProjectIndex > 0) {
-      setDirection(-1);
       setCurrentProjectIndex(prev => prev - 1);
     } else {
       // Return to cover if going back from the first page
@@ -75,15 +72,14 @@ const PortfolioPages = () => {
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-10 -ml-5 z-30 bg-gradient-to-r from-black/10 to-transparent pointer-events-none rounded-sm"></div>
             
             {/* Left Page (Previous Project or Intro) */}
-            <div className="w-full md:w-1/2 hidden md:block overflow-hidden">
-              <AnimatePresence mode="popLayout" initial={false}>
+            <div className="w-full md:w-1/2 hidden md:block">
+              <AnimatePresence mode="wait">
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={direction === -1 ? { rotateY: -90, opacity: 0 } : false}
+                  initial={{ opacity: 0, rotateY: -10 }}
                   animate={{ opacity: 1, rotateY: 0 }}
-                  exit={false}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                  style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
+                  exit={{ opacity: 0, rotateY: 10 }}
+                  transition={{ duration: 0.4 }}
                   className="h-full"
                 >
                   <ScrapbookPage 
@@ -132,15 +128,14 @@ const PortfolioPages = () => {
             </div>
 
             {/* Right Page (Current Project) */}
-            <div className="w-full md:w-1/2 overflow-hidden">
-              <AnimatePresence mode="popLayout" initial={false}>
+            <div className="w-full md:w-1/2">
+              <AnimatePresence mode="wait">
                 <motion.div
                     key={`right-${currentProjectIndex}`}
-                    initial={direction === 1 ? { rotateY: 90, opacity: 0 } : false}
-                    animate={{ rotateY: 0, opacity: 1 }}
-                    exit={false}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                    style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
+                    initial={{ opacity: 0, rotateY: 10 }}
+                    animate={{ opacity: 1, rotateY: 0 }}
+                    exit={{ opacity: 0, rotateY: -10 }}
+                    transition={{ duration: 0.4 }}
                     className="h-full"
                 >
                   <ScrapbookPage 
