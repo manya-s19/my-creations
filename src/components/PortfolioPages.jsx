@@ -81,7 +81,7 @@ const PortfolioPages = () => {
                   initial={direction === -1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
                   animate={{ opacity: 1, rotateY: 0 }}
                   exit={ direction === 1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 } }
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
                   style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
                   className="h-full"
                 >
@@ -136,7 +136,7 @@ const PortfolioPages = () => {
                     initial={direction === 1 ? { rotateY: 90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
                     animate={{ rotateY: 0, opacity: 1 }}
                     exit={{ opacity: 1, rotateY: 0}}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    transition={{ duration: 0.8, ease: "easeInOut" }}
                     style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
                     className="h-full"
                 >
