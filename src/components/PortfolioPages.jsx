@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowRight, Home } from 'lucide-react';
 import ScrapbookCover from './ScrapbookCover';
 import ScrapbookPage from './ScrapbookPage';
 import ProjectCard from './ProjectCard';
@@ -154,12 +154,21 @@ const PortfolioPages = () => {
 
             {/* Navigation Button Right */}
             <button 
-                onClick={handleNext}
-                disabled={currentProjectIndex === projectsData.length - 1}
-                className="hidden xl:flex absolute -right-16 z-50 top-1/2 -translate-y-1/2 p-4 bg-[#9BC1BC] text-[#031927] rounded-full shadow-[4px_4px_0px_#031927] border-2 border-[#031927] hover:scale-110 hover:shadow-none transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label="Next Page"
+              onClick={() => {
+                if (currentProjectIndex === projectsData.length - 1) {
+                  setViewState('cover');
+                } else {
+                  handleNext();
+                }
+              }}
+              className="hidden xl:flex absolute -right-16 z-50 top-1/2 -translate-y-1/2 p-4 bg-[#9BC1BC] text-[#031927] rounded-full shadow-[4px_4px_0px_#031927] border-2 border-[#031927] hover:scale-110 hover:shadow-none transition-all"
+              aria-label={currentProjectIndex === projectsData.length - 1 ? "Return Home" : "Next Page"}
             >
-                <ChevronRight size={36} />
+                {currentProjectIndex === projectsData.length - 1 ? (
+                  <Home size={36} />
+                ) : (
+                  <ChevronRight size={36} />
+                )}
             </button>
             
              {/* Mobile Navigation Controls */}
