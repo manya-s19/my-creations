@@ -71,7 +71,7 @@ const projectsData = [
     category: "Mobile Application",
     date: "2026",
     image: "https://images.unsplash.com/photo-1644995722044-6cd197ffb440",
-    color: "#22333B"
+    color: "#ED6A5A"
   }
 ];
 
