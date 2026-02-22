@@ -102,6 +102,24 @@ const PortfolioPages = () => {
                                  Flip through the pages to see what I've been working on lately!
                              </p>
                              <div className="w-40 h-2 bg-[#ED6A5A] rounded-full mx-auto my-6"/>
+                             
+                             {/* Table of Contents */}
+                             <div className="bg-white/60 p-6 rounded-lg border-2 border-[#031927] max-w-md w-full">
+                                <h3 className="handwritten text-2xl font-bold text-[#031927] mb-4">Contents</h3>
+                                <ul className="space-y-3 text-left">
+                                  {projectsData.map((project, index) => (
+                                    <li key={project.id}>
+                                      <button
+                                        onClick={() => setCurrentProjectIndex(index)}
+                                        className="text-[#22333B] hover:text-[#ED6A5A] transition-colors text-base font-medium flex items-start gap-2 w-full text-left group"
+                                      >
+                                        <span className="text-[#ED6A5A] font-bold min-w-[24px]">{index + 1}.</span>
+                                        <span className="group-hover:underline">{project.title}</span>
+                                      </button>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
                          </div>
                      )}
                   </ScrapbookPage>
