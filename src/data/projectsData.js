@@ -38,7 +38,9 @@ const projectsData = [
   {
     id: 3,
     title: "GNSS Satellite Simulation",
+    link: "https://github.com/manya-s19/gnss_sim",
     description: "Advanced simulation system for Global Navigation Satellite Systems (GNSS) that models satellite orbits, signal propagation, and positioning algorithms for research and education.",
+    linkText: "View Project",
     technologies: ["C++", "OpenGL", "Python", "NumPy", "Qt", "CUDA"],
     keyFeatures: [
       "Real-time satellite orbit visualization",
