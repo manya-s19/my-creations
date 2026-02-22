@@ -76,10 +76,11 @@ const PortfolioPages = () => {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={{ opacity: 0, rotateY: -10 }}
-                  animate={{ opacity: 1, rotateY: 0 }}
-                  exit={{ opacity: 0, rotateY: 10 }}
-                  transition={{ duration: 0.4 }}
+                  initial={{ rotateY: -90, opacity: 0 }}
+                  animate={{ rotateY: 0, opacity: 1 }}
+                  exit={{ rotateY: 90, opacity: 0 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
                   className="h-full"
                 >
                   <ScrapbookPage 
@@ -132,10 +133,11 @@ const PortfolioPages = () => {
                <AnimatePresence mode="wait">
                 <motion.div
                     key={`right-${currentProjectIndex}`}
-                    initial={{ opacity: 0, rotateY: 10 }}
-                    animate={{ opacity: 1, rotateY: 0 }}
-                    exit={{ opacity: 0, rotateY: -10 }}
-                    transition={{ duration: 0.4 }}
+                    initial={{ rotateY: 90, opacity: 0 }}
+                    animate={{ rotateY: 0, opacity: 1 }}
+                    exit={{ rotateY: -90, opacity: 0 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
                     className="h-full"
                 >
                   <ScrapbookPage 
