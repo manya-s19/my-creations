@@ -75,11 +75,10 @@ const PortfolioPages = () => {
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-10 -ml-5 z-30 bg-gradient-to-r from-black/10 to-transparent pointer-events-none rounded-sm"></div>
             
             {/* Left Page (Previous Project or Intro) */}
-            <div className="w-full md:w-1/2 hidden md:block">
-              <AnimatePresence mode="wait">
+            <div className="w-full md:w-1/2 hidden md:block overflow-hidden">
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={{ opacity: 1, rotateY: 0 }}
+                  initial={direction === -1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
                   animate={{ opacity: 1, rotateY: 0 }}
                   exit={ direction === 1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 } }
                   transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -128,12 +127,10 @@ const PortfolioPages = () => {
                      )}
                   </ScrapbookPage>
                 </motion.div>
-              </AnimatePresence>
             </div>
 
             {/* Right Page (Current Project) */}
-            <div className="w-full md:w-1/2">
-               <AnimatePresence mode="wait">
+            <div className="w-full md:w-1/2 overflow-hidden">
                 <motion.div
                     key={`right-${currentProjectIndex}`}
                     initial={direction === 1 ? { rotateY: 90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
@@ -154,7 +151,6 @@ const PortfolioPages = () => {
                     </div>
                   </ScrapbookPage>
                 </motion.div>
-              </AnimatePresence>
             </div>
 
             {/* Navigation Button Right */}
