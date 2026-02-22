@@ -173,17 +173,26 @@ const PortfolioPages = () => {
             
              {/* Mobile Navigation Controls */}
             <div className="md:hidden flex justify-between items-center bg-[#22333B] p-4 text-[#F4F1BB]">
-                 <button onClick={handlePrevious} className="flex items-center gap-1 font-bold">
-                    <ChevronLeft size={24}/> Prev
-                 </button>
-                 <span className="text-base">Project {currentProjectIndex + 1} of {projectsData.length}</span>
-                 <button 
-                    onClick={handleNext} 
-                    disabled={currentProjectIndex === projectsData.length - 1}
-                    className="flex items-center gap-1 font-bold disabled:opacity-50"
-                 >
-                    Next <ChevronRight size={24}/>
-                 </button>
+              <button onClick={handlePrevious} className="flex items-center gap-1 font-bold">
+                <ChevronLeft size={24}/> Prev
+              </button>
+              <span className="text-base">Project {currentProjectIndex + 1} of {projectsData.length}</span>
+                <button 
+                  onClick={() => {
+                    if (currentProjectIndex === projectsData.length - 1) {
+                      setViewState('cover');
+                    } else {
+                      handleNext();
+                    }
+                  }}
+                  className="flex items-center gap-1 font-bold"
+                >
+                  {currentProjectIndex === projectsData.length - 1 ? (
+                    <>Home <Home size={24}/></>
+                  ) : (
+                    <>Next <ChevronRight size={24}/></>
+                  )}
+                </button>
             </div>
 
         </div>
