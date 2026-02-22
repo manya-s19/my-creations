@@ -12,6 +12,7 @@ import WashiTape from './decorative/WashiTape';
 const PortfolioPages = () => {
   const [viewState, setViewState] = useState('cover'); // 'cover' or 'book'
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   // Keyboard navigation
   useEffect(() => {
@@ -36,12 +37,14 @@ const PortfolioPages = () => {
 
   const handleNext = () => {
     if (currentProjectIndex < projectsData.length - 1) {
+      setDirection(1);
       setCurrentProjectIndex(prev => prev + 1);
     }
   };
 
   const handlePrevious = () => {
     if (currentProjectIndex > 0) {
+      setDirection(-1);
       setCurrentProjectIndex(prev => prev - 1);
     } else {
       // Return to cover if going back from the first page
@@ -76,9 +79,10 @@ const PortfolioPages = () => {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={false}
-                  exit={{ rotateY: 90, opacity: 0 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  initial={{ opacity: 1, rotateY: 0 }}
+                  animate={{ opacity: 1, rotateY: 0 }}
+                  exit={ direction === 1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 } }
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                   style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
                   className="h-full"
                 >
@@ -132,10 +136,10 @@ const PortfolioPages = () => {
                <AnimatePresence mode="wait">
                 <motion.div
                     key={`right-${currentProjectIndex}`}
-                    initial={{ rotateY: 90, opacity: 0 }}
+                    initial={direction === 1 ? { rotateY: 90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
                     animate={{ rotateY: 0, opacity: 1 }}
-                    exit={false}
-                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    exit={{ opacity: 1, rotateY: 0}}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
                     style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
                     className="h-full"
                 >
