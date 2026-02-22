@@ -76,8 +76,7 @@ const PortfolioPages = () => {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={{ rotateY: -90, opacity: 0 }}
-                  animate={{ rotateY: 0, opacity: 1 }}
+                  initial={false}
                   exit={{ rotateY: 90, opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
@@ -135,7 +134,7 @@ const PortfolioPages = () => {
                     key={`right-${currentProjectIndex}`}
                     initial={{ rotateY: 90, opacity: 0 }}
                     animate={{ rotateY: 0, opacity: 1 }}
-                    exit={{ rotateY: -90, opacity: 0 }}
+                    exit={false}
                     transition={{ duration: 0.6, ease: "easeInOut" }}
                     style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
                     className="h-full"
