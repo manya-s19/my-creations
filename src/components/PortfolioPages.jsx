@@ -76,11 +76,12 @@ const PortfolioPages = () => {
             
             {/* Left Page (Previous Project or Intro) */}
             <div className="w-full md:w-1/2 hidden md:block overflow-hidden">
+              <AnimatePresence mode="popLayout" initial={false}>
                 <motion.div
                   key={`left-${currentProjectIndex}`}
-                  initial={direction === -1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
+                  initial={direction === -1 ? { rotateY: -90, opacity: 0 } : false}
                   animate={{ opacity: 1, rotateY: 0 }}
-                  exit={ direction === 1 ? { rotateY: -90, opacity: 0 } : { opacity: 1, rotateY: 0 } }
+                  exit={false}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                   style={{ transformOrigin: "right center", transformStyle: "preserve-3d"}}
                   className="h-full"
@@ -127,15 +128,17 @@ const PortfolioPages = () => {
                      )}
                   </ScrapbookPage>
                 </motion.div>
+              </AnimatePresence>
             </div>
 
             {/* Right Page (Current Project) */}
             <div className="w-full md:w-1/2 overflow-hidden">
+              <AnimatePresence mode="popLayout" initial={false}>
                 <motion.div
                     key={`right-${currentProjectIndex}`}
-                    initial={direction === 1 ? { rotateY: 90, opacity: 0 } : { opacity: 1, rotateY: 0 }}
+                    initial={direction === 1 ? { rotateY: 90, opacity: 0 } : false}
                     animate={{ rotateY: 0, opacity: 1 }}
-                    exit={{ opacity: 1, rotateY: 0}}
+                    exit={false}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     style={{ transformOrigin: "left center", transformStyle: "preserve-3d"}}
                     className="h-full"
@@ -151,6 +154,7 @@ const PortfolioPages = () => {
                     </div>
                   </ScrapbookPage>
                 </motion.div>
+              </AnimatePresence>
             </div>
 
             {/* Navigation Button Right */}
