@@ -105,7 +105,7 @@ const PortfolioPages = () => {
                              
                              {/* Table of Contents */}
                              <div className="bg-white/60 p-6 rounded-lg border-2 border-[#031927] max-w-md w-full">
-                                <h3 className="handwritten text-2xl font-bold text-[#031927] mb-4">Contents</h3>
+                                <h3 className="handwritten text-2xl font-bold text-[#031927] mb-4">Table of Contents</h3>
                                 <ul className="space-y-3 text-left">
                                   {projectsData.map((project, index) => (
                                     <li key={project.id}>
