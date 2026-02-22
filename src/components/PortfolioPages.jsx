@@ -94,12 +94,12 @@ const PortfolioPages = () => {
                          </div>
                      ) : (
                          <div className="flex flex-col items-center justify-center h-full text-center space-y-8 p-8">
-                             <HandwrittenLabel text="My Journey Begins" rotation={-2} color="#031927" bgColor="#9BC1BC" className="text-4xl mb-6"/>
+                             <HandwrittenLabel text="My Journey So Far" rotation={-2} color="#031927" bgColor="#9BC1BC" className="text-4xl mb-6"/>
                              <p className="text-2xl text-[#031927] leading-relaxed max-w-lg mx-auto">
                                  Welcome to my collection of digital experiments and professional projects. 
                              </p>
                              <p className="text-xl text-[#22333B] max-w-md mx-auto">
-                                 Flip through the pages to see what I've been working on lately.
+                                 Flip through the pages to see what I've been working on lately!
                              </p>
                              <div className="w-40 h-2 bg-[#ED6A5A] rounded-full mx-auto my-6"/>
                          </div>
