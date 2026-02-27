@@ -236,6 +236,9 @@ const PortfolioPages = () => {
                   <p className="text-base md:text-lg">
                     I'm a creative developer who builds things that live on the internet. 
                   </p>
+                  <p className="text-base md:text-lg">
+                    Here's my <a href="https://drive.google.com/file/d/1c9mxW-w5R0yQmkfAnZg_VLAMrcwhhSZk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#ED6A5A] underline font-bold hover:text-[#031927] transition-colors">resume</a>.
+                  </p>
                   <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I'm a computer science student at the <strong>University of Waterloo</strong> passionate about building things at the intersection of software and hardware, from noise-cancelling tech to aerospace data pipelines. My experience spans researching electrochemistry at Stanford, leading robotics teams, and full-stack development, with a focus on AI, data analysis, and making complex systems work.</p>
             <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I work primarily with <strong>Python (NumPy, Pandas, PyTorch, TensorFlow), Java, C/C++, and JavaScript/React.</strong> I'm learning Linux right now, and I'm currently developing a <strong>GNSS satellite simulation and web applications for Women in Aerospace Canada.</strong> I'm also passionate about tech x education in my volunteer work, and I tutor in my free time.</p>
             <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I'm always open to collaborating on projects involving robotics, data science, or creative problem-solving!</p>
