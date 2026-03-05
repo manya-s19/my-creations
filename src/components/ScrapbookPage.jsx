@@ -60,7 +60,7 @@ const ScrapbookPage = ({
             
             {/* Bottom Section - Balanced Anchors */}
             {/* Earth sticker (replacing previous planet) */}
-            <ScrapbookStickers type="earth" size={60} rotation={10} className="bottom-20 left-12 md:bottom-28 md:left-20" />
+            <ScrapbookStickers type="earth" size={60} rotation={10} className="bottom-20 left-12 md:bottom-28 md:left-15" />
             
             <ScrapbookStickers type="laptop" size={65} rotation={-5} className="bottom-16 right-10 md:bottom-24 md:right-16" />
             
