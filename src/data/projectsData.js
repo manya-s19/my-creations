@@ -76,7 +76,7 @@ const projectsData = [
   {
     id: 5,
     title: "Aerial Threat Detector",
-    description: "Real-time aerial threat detector using YOLOv8; classifies drones, aircraft, and birds based on threat level.",
+    description: "Real-time aerial threat detector using YOLOv8; real-time classification of drones, aircraft, and birds based on threat level.",
     link: "https://github.com/manya-s19/aerial-threat-detector",
     linkText: "View Project",
     technologies: ["PyTorch", "YOLOv8", "OpenCV", "Python"],
