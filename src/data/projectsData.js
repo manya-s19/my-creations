@@ -72,6 +72,24 @@ const projectsData = [
     date: "2026",
     image: "https://images.unsplash.com/photo-1644995722044-6cd197ffb440",
     color: "#ED6A5A"
+  },
+  {
+    id: 5,
+    title: "Aerial Threat Detector",
+    description: "Real-time aerial threat detector using YOLOv8; classifies drones, aircraft, and birds based on threat level.",
+    link: "https://github.com/manya-s19/aerial-threat-detector",
+    linkText: "View Project",
+    technologies: ["PyTorch", "YOLOv8", "OpenCV", "Python"],
+    keyFeatures: [
+      "YOLOv8 model trained on 5,000+ aerial images",
+      "Multi-class detection: drones, aircraft, birds",
+      "Real-time webcam inference with threat prioritization",
+      "Smoothed detection buffer to prevent flickering"
+    ],
+    category: "AI/ML Project",
+    date: "2026",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e",
+    color: "#9BC1BC"
   }
 ];
 
