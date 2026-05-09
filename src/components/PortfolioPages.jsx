@@ -234,7 +234,10 @@ const PortfolioPages = () => {
                   className="space-y-5 text-base md: text:lg md:text-xl text-[#22333B] leading-relaxed"
                >
                   <p className="text-base md:text-lg">
-                    I'm a creative developer who builds things that live online. Here's my <a href="https://drive.google.com/file/d/1c9mxW-w5R0yQmkfAnZg_VLAMrcwhhSZk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#ED6A5A] underline font-bold hover:text-[#031927] transition-colors">resume</a>. Catch your next flight at my new <a href="https://manya-s19.github.io/aero-port/" target="_blank" rel="noopener noreferrer" className="text-[#132863] underline font-bold hover:text-[#55abe0] transition-colors">aeroport(folio)</a>.
+                    I'm a creative developer who builds things that live online. Here's my <a href="https://drive.google.com/file/d/1c9mxW-w5R0yQmkfAnZg_VLAMrcwhhSZk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-[#ED6A5A] underline font-bold hover:text-[#031927] transition-colors">resume</a>. Also, if you can...
+                  </p>
+                  <p className="text-base md:text-lg">
+                    Pay my new <a href="https://manya-s19.github.io/aero-port/" target="_blank" rel="noopener noreferrer" className="text-[#174d6e] underline font-bold hover:text-[#55abe0] transition-colors">aeroport(folio)</a> a visit!
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed text-[#22333B]">I'm a computer science student at the <strong>University of Waterloo</strong> passionate about building things at the intersection of software and hardware, from noise-cancelling tech to aerospace data pipelines. My experience spans researching electrochemistry at Stanford, leading robotics teams, and full-stack development, with a focus on AI, data analysis, and making complex systems work.</p>
